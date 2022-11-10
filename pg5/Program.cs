@@ -4,9 +4,18 @@ namespace pg5
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            string str = Console.ReadLine();
+            int num = Convert.ToInt32(str);
+            Console.WriteLine(Result(num));
+        }
+        private static int Result(int x)
+        {
+            int val = (int)Math.Pow(x, 2);
+            return val;
         }
     }
+
 }
+
